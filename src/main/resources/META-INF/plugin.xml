@@ -1,0 +1,35 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>cn.youlai.TaroQuickCreate</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>TaroQuickCreate</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="chenliheng@youlai.cn" url="https://youlai.cn">有来医生</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description>TaroQuickCreate 是一个用于快速创建 Taro 页面和组件的目录以及文件的插件，TaroPage 包含 index.tsx｜index.module.less|index.config.ts .TaroComp包含index.tsx｜index.module.less</description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <actions>
+        <group id="TaroQuickCreate" text="TaroQuickCreate">
+            <add-to-group group-id="NewGroup" anchor="first" />
+            <action class="cn.youlai.taroquickcreate.CreatePageAction" id="CreateFilesActionId" text="Taro Page" />
+            <action class="cn.youlai.taroquickcreate.CreateCompAction" id="CreateFilesActionId2" text="Taro Comp" />
+        </group>
+    </actions>
+</idea-plugin>
