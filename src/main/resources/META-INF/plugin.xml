@@ -28,8 +28,8 @@
     <actions>
         <group id="TaroQuickCreate" text="TaroQuickCreate">
             <add-to-group group-id="NewGroup" anchor="first" />
-            <action class="cn.youlai.taroquickcreate.CreatePageAction" id="CreateFilesActionId" text="Taro Page" />
-            <action class="cn.youlai.taroquickcreate.CreateCompAction" id="CreateFilesActionId2" text="Taro Comp" />
+            <action class="cn.youlai.taroquickcreate.CreatePageAction" id="CreateFilesActionId" icon="AllIcons.FileTypes.AddAny" text="Taro Page" />
+            <action class="cn.youlai.taroquickcreate.CreateCompAction" id="CreateFilesActionId2" icon="AllIcons.FileTypes.AddAny" text="Taro Comp" />
         </group>
     </actions>
 </idea-plugin>

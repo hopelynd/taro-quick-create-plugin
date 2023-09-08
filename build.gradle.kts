@@ -4,8 +4,8 @@ plugins {
     id("org.jetbrains.intellij") version "1.14.1"
 }
 
-group = "cn.youlai"
-version = "1.0"
+group = "com.hopelynd"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
